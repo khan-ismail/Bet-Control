@@ -1,0 +1,57 @@
+{
+  "cSpell.words": [
+    "Encrypter",
+    "fenix",
+    "Getx",
+    "jwttoken",
+    "betControl",
+    "BETCONTROL",
+    "BET_CONTROL",
+    "BET CONTROL",
+    "bet control",
+    "unawaited",
+  ],
+  
+  "cloudcode.duetAI.inlineSuggestions.enableAuto": true,
+  "debug.toolBarLocation": "commandCenter",
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off",
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.firebase": true,
+    "**/.dart_tool": true,
+    "**/.idea": true,
+    // "**/.run": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/.firebase": true,
+    "**/.dart_tool": true,
+    "**/.idea": true,
+    // "**/.run": true,
+    "env-*": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/.firebase": true,
+    "**/.dart_tool": true,
+    // "**/.run": true,
+    "**/.idea": true,
+    "env*": true
+  },
+  "cloudcode.enableTelemetry": false,
+  "gitlens.telemetry.enabled": false
+}

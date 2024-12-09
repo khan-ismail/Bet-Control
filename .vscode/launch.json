@@ -1,0 +1,68 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Dev",
+            "program": "lib/main_dev.dart",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "args": [
+                "--web-port",
+                "3001",
+                "--flavor",
+                "development",
+            ]
+        },
+        {
+            "name": "Main",
+            "program": "lib/main.dart",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "args": [
+                "--web-port",
+                "3001",
+            ]
+        },
+        {
+            "name": "Stage",
+            "program": "lib/main_stage.dart",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "args": [
+                "--web-port",
+                "3001",
+                "--flavor",
+                "staging"
+            ]
+        },
+        {
+            "name": "Pre-Production",
+            "program": "lib/main_pre_prod.dart",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "args": [
+                "--web-port",
+                "3001",
+                "--flavor",
+                "pre-production"
+            ]
+        },
+        {
+            "name": "Production",
+            "program": "lib/main_prod.dart",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "args": [
+                "--web-port",
+                "3001",
+                "--flavor",
+                "production"
+            ]
+        },
+    ]
+}
