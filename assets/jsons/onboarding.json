@@ -1,0 +1,22 @@
+{
+    "data":[
+        {
+          "title": "Welcome TO BetControl",
+          "description":
+              "Take your first step towards responsible gaming with BetControl, and discover a healthier gaming experience",
+          "image": "assets/images/onboarding1.svg"
+        },
+        {
+          "title": "Betting Addiction",
+          "description":
+              "Don't let betting control your life. Take charge, manage your habits, and stay in full control.",
+          "image": "assets/images/onboarding2.svg"
+        },
+        {
+          "title": "Take Control",
+          "description":
+              "BetControl helps you take charge of your habits and stay in control. Start your journey today!",
+          "image": "assets/images/onboarding3.svg"
+        }
+      ]
+}
