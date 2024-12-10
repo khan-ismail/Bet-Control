@@ -2,67 +2,60 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Dev",
+            "name": "betcontrol (dev)",
+            "request": "launch",
+            "type": "dart",
             "program": "lib/main_dev.dart",
+            "args": [
+                "--flavor", "dev",
+                "--target", "lib/main_dev.dart",                
+            ]
+        },{
+            "name": "betcontrol (uat)",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "debug",
+            "program": "lib/main_uat.dart",
             "args": [
-                "--web-port",
-                "3001",
-                "--flavor",
-                "development",
+                "--flavor", "uat",
+                "--target", "lib/main_uat.dart",                
             ]
         },
         {
-            "name": "Main",
-            "program": "lib/main.dart",
+            "name": "betcontrol (prod)",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "debug",
-            "args": [
-                "--web-port",
-                "3001",
-            ]
-        },
-        {
-            "name": "Stage",
-            "program": "lib/main_stage.dart",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "debug",
-            "args": [
-                "--web-port",
-                "3001",
-                "--flavor",
-                "staging"
-            ]
-        },
-        {
-            "name": "Pre-Production",
-            "program": "lib/main_pre_prod.dart",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "debug",
-            "args": [
-                "--web-port",
-                "3001",
-                "--flavor",
-                "pre-production"
-            ]
-        },
-        {
-            "name": "Production",
             "program": "lib/main_prod.dart",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "debug",
             "args": [
-                "--web-port",
-                "3001",
-                "--flavor",
-                "production"
+                "--flavor", "prod",
+                "--target", "lib/main_prod.dart",
             ]
-        },
+        }
     ]
 }
+
+
+/// commands to build apk/ipa
+
+// UAT APK :
+// flutter build apk --flavor uat --target lib/main_uat.dart
+
+// UAT IPA : 
+// flutter build ipa --flavor uat --target lib/main_uat.dart
+
+
+// PROD APK :
+// flutter build apk --flavor prod --target lib/main_prod.dart
+
+// PROD IPA : 
+// flutter build ipa --flavor prod --target lib/main_prod.dart
+
+
+
+// PROD Appbundle :
+// flutter build appbundle --flavor prod --target lib/main_prod.dart
+
+
+
+///Playstore Split APK :
+//PROD :
+// flutter build apk --flavor prod --target lib/main_prod.dart --target-platform android-arm,android-arm64,android-x64 --split-per-abi

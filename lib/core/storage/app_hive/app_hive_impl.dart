@@ -1,5 +1,5 @@
-import 'package:bet_control/core/storage/storage.dart';
-import 'package:bet_control/utils/constants/app_string.dart';
+import 'package:betcontrol/core/storage/storage.dart';
+import 'package:betcontrol/utils/constants/app_string.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 class AppHiveImpl implements Storage {
