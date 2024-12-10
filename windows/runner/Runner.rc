@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "bet_control" "\0"
+            VALUE "CompanyName", "com.betcontrol" "\0"
+            VALUE "FileDescription", "betcontrol" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "bet_control" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "bet_control.exe" "\0"
-            VALUE "ProductName", "bet_control" "\0"
+            VALUE "InternalName", "betcontrol" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2024 com.betcontrol. All rights reserved." "\0"
+            VALUE "OriginalFilename", "betcontrol.exe" "\0"
+            VALUE "ProductName", "betcontrol" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

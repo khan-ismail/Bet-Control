@@ -1,26 +1,24 @@
-name: bet_control
-description: "A new Flutter project."
-publish_to: 'none'
-
-version: 1.0.0+1
+name: betcontrol
+description: "Betcontrol"
+publish_to: "none"
+version: 0.1.0
 
 environment:
-  sdk: ^3.5.3
+  sdk: ^3.5.4
 
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.8
-  flutter_flavor: ^3.1.1
   flutter_native_splash: ^2.4.3
+  flutter_riverpod: ^2.6.1
   hive: ^2.2.3
   hive_flutter: ^1.1.0
-  flutter_riverpod: ^2.6.1
   riverpod_annotation: ^2.6.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_flavorizr: ^2.2.3
   flutter_lints: ^4.0.0
   hive_generator: ^2.0.1
   build_runner: ^2.4.13
@@ -47,7 +45,6 @@ flutter:
     - assets/images/
     - assets/images/raster/
     - assets/images/raster/splash/
-    - assets/images/svg/
 
   fonts:
     - family: Nunito
@@ -69,6 +66,35 @@ flutter:
         - asset: assets/fonts/nunito/Nunito-Light.ttf
           weight: 300
 
+flavorizr:
+  flavors:
+    prod:
+      app:
+        name: "BetControl"
 
-# to generate .g.dart file for riverpod
-# dart run build_runner watch
+      android:
+        applicationId: "com.betcontrol"
+      ios:
+        bundleId: "com.betcontrol"
+      macos:
+        bundleId: "com.betcontrol"
+    uat:
+      app:
+        name: "BetControl Uat"
+
+      android:
+        applicationId: "com.betcontrol.uat"
+      ios:
+        bundleId: "com.betcontrol.uat"
+      macos:
+        bundleId: "com.betcontrol.uat"
+    dev:
+      app:
+        name: "BetControl Dev"
+
+      android:
+        applicationId: "com.betcontrol.dev"
+      ios:
+        bundleId: "com.betcontrol.dev"
+      macos:
+        bundleId: "com.betcontrol.dev"
