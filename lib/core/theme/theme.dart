@@ -3,7 +3,7 @@ import 'package:betcontrol/core/theme/text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class AppTheme {
+abstract class AppTheme {
   static const _colorScheme = ColorScheme.light(
     surface: AppPallete.backgroundColor,
     onSurface: AppPallete.primary,

@@ -1,7 +1,7 @@
 import 'package:betcontrol/core/theme/app_pallet.dart';
 import 'package:flutter/material.dart';
 
-class AppTextStyles {
+abstract class AppTextStyles {
   static const TextStyle bodyLarge = TextStyle(
     fontSize: 24,
     color: AppPallete.primary,
