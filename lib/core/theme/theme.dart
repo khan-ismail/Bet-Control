@@ -46,24 +46,26 @@ abstract class AppTheme {
     ),
   );
 
+  static final _inputDecorationTheme = InputDecorationTheme(
+    contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+    enabledBorder: _border(),
+    focusedBorder: _border(),
+    hintStyle: AppTextStyles.headlineSmall.copyWith(
+      color: AppPallete.primary.withValues(alpha: 0.3),
+    ),
+    errorStyle: AppTextStyles.headlineSmall.copyWith(
+      color: AppPallete.error,
+    ),
+    labelStyle: AppTextStyles.headlineSmall.copyWith(
+      color: AppPallete.primary,
+    ),
+  );
+
   static final lightThemeMode = ThemeData.light().copyWith(
     colorScheme: _colorScheme,
     scaffoldBackgroundColor: AppPallete.backgroundColor,
     appBarTheme: _appBarTheme,
-    inputDecorationTheme: InputDecorationTheme(
-      contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
-      enabledBorder: _border(),
-      focusedBorder: _border(),
-      hintStyle: AppTextStyles.headlineSmall.copyWith(
-        color: AppPallete.primary.withValues(alpha: 0.3),
-      ),
-      errorStyle: AppTextStyles.headlineSmall.copyWith(
-        color: AppPallete.error,
-      ),
-      labelStyle: AppTextStyles.headlineSmall.copyWith(
-        color: AppPallete.primary,
-      ),
-    ),
+    inputDecorationTheme: _inputDecorationTheme,
     elevatedButtonTheme: _elevatedButtonTheme,
     outlinedButtonTheme: _outlinedButtonTheme(),
     textTheme: GoogleFonts.nunitoTextTheme().copyWith(
