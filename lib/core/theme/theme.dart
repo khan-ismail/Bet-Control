@@ -15,7 +15,7 @@ abstract class AppTheme {
   static _border([Color color = AppPallete.primary]) => OutlineInputBorder(
         borderSide: BorderSide(
           color: color,
-          width: 3,
+          width: 2,
         ),
         borderRadius: BorderRadius.circular(10),
       );
@@ -39,8 +39,11 @@ abstract class AppTheme {
         ),
       );
 
-  static const _appBarTheme = const AppBarTheme(
+  static final _appBarTheme = AppBarTheme(
     backgroundColor: AppPallete.backgroundColor,
+    titleTextStyle: AppTextStyles.bodyLarge.copyWith(
+      fontWeight: FontWeight.w800,
+    ),
   );
 
   static final lightThemeMode = ThemeData.light().copyWith(
@@ -48,7 +51,7 @@ abstract class AppTheme {
     scaffoldBackgroundColor: AppPallete.backgroundColor,
     appBarTheme: _appBarTheme,
     inputDecorationTheme: InputDecorationTheme(
-      contentPadding: const EdgeInsets.all(27),
+      contentPadding: const EdgeInsets.all(8),
       enabledBorder: _border(),
       focusedBorder: _border(),
     ),

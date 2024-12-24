@@ -1,6 +1,6 @@
-import 'package:betcontrol/pages/home/home_page.dart';
 import 'package:betcontrol/pages/onboarding/widgets/onboarding_body.dart';
 import 'package:betcontrol/pages/onboarding/widgets/onboarding_button.dart';
+import 'package:betcontrol/pages/sign_up/sign_up_page.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingPage extends StatefulWidget {
@@ -79,7 +79,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   if (_currentPage == onboardingData.length - 1) {
                     Navigator.pushReplacement(
                       context,
-                      MaterialPageRoute(builder: (context) => const HomePage()),
+                      MaterialPageRoute(
+                          builder: (context) => const SignUpPage()),
                     );
                   } else {
                     _pageController.nextPage(
@@ -108,7 +109,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
       decoration: BoxDecoration(
         color: _currentPage == index
             ? const Color(0xff1A3B5D)
-            : const Color(0xff628FBE).withOpacity(0.3),
+            : const Color(0xff628FBE).withValues(alpha: 0.3),
         borderRadius: BorderRadius.circular(4),
       ),
     );

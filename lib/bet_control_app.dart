@@ -1,3 +1,4 @@
+import 'package:betcontrol/core/theme/theme.dart';
 import 'package:betcontrol/pages/onboarding/onboarding_page.dart';
 import 'package:betcontrol/utils/loggers/logger.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +11,8 @@ class BetControlApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ProviderScope(
       observers: [Logger()],
-      child: const MaterialApp(
+      child: MaterialApp(
+        theme: AppTheme.lightThemeMode,
         home: OnboardingPage(),
       ),
     );

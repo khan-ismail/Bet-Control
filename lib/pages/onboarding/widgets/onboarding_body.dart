@@ -22,10 +22,9 @@ class OnboardingBody extends StatelessWidget {
         children: [
           Text(
             title,
-            style: const TextStyle(
-              fontSize: 30,
-              fontWeight: FontWeight.bold,
-            ),
+            style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                  fontWeight: FontWeight.w800,
+                ),
           ),
           const SizedBox(height: 60),
           SvgPicture.asset(image),
@@ -33,6 +32,10 @@ class OnboardingBody extends StatelessWidget {
           Text(
             description,
             textAlign: TextAlign.center,
+            style: Theme.of(context)
+                .textTheme
+                .labelSmall!
+                .copyWith(fontWeight: FontWeight.w600),
           )
         ],
       ),
