@@ -51,9 +51,18 @@ abstract class AppTheme {
     scaffoldBackgroundColor: AppPallete.backgroundColor,
     appBarTheme: _appBarTheme,
     inputDecorationTheme: InputDecorationTheme(
-      contentPadding: const EdgeInsets.all(8),
+      contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
       enabledBorder: _border(),
       focusedBorder: _border(),
+      hintStyle: AppTextStyles.headlineSmall.copyWith(
+        color: AppPallete.primary.withValues(alpha: 0.3),
+      ),
+      errorStyle: AppTextStyles.headlineSmall.copyWith(
+        color: AppPallete.error,
+      ),
+      labelStyle: AppTextStyles.headlineSmall.copyWith(
+        color: AppPallete.primary,
+      ),
     ),
     elevatedButtonTheme: _elevatedButtonTheme,
     outlinedButtonTheme: _outlinedButtonTheme(),
