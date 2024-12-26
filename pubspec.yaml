@@ -52,25 +52,25 @@ flutter:
     - assets/jsons/
     - assets/images/authentication/
 
-  fonts:
-    - family: Nunito
-      fonts:
-        - asset: assets/fonts/nunito/Nunito-Black.ttf
-          weight: 900
-        - asset: assets/fonts/nunito/Nunito-BlackItalic.ttf
-          weight: 900
-          style: italic
-        - asset: assets/fonts/nunito/Nunito-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/nunito/Nunito-BoldItalic.ttf
-          weight: 700
-          style: italic
-        - asset: assets/fonts/nunito/Nunito-SemiBold.ttf
-          weight: 600
-        - asset: assets/fonts/nunito/Nunito-Regular.ttf
-          weight: 400
-        - asset: assets/fonts/nunito/Nunito-Light.ttf
-          weight: 300
+  # fonts:
+  #   - family: Nunito
+  #     fonts:
+  #       - asset: assets/fonts/nunito/Nunito-Black.ttf
+  #         weight: 900
+  #       - asset: assets/fonts/nunito/Nunito-BlackItalic.ttf
+  #         weight: 900
+  #         style: italic
+  #       - asset: assets/fonts/nunito/Nunito-Bold.ttf
+  #         weight: 700
+  #       - asset: assets/fonts/nunito/Nunito-BoldItalic.ttf
+  #         weight: 700
+  #         style: italic
+  #       - asset: assets/fonts/nunito/Nunito-SemiBold.ttf
+  #         weight: 600
+  #       - asset: assets/fonts/nunito/Nunito-Regular.ttf
+  #         weight: 400
+  #       - asset: assets/fonts/nunito/Nunito-Light.ttf
+  #         weight: 300
 
 flavorizr:
   flavors:

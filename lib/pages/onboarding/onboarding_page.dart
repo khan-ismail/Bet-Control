@@ -53,9 +53,9 @@ class _OnboardingPageState extends State<OnboardingPage> {
                 },
                 itemBuilder: (context, index) {
                   return OnboardingBody(
-                    title: onboardingData[index]["title"]!,
-                    description: onboardingData[index]["description"]!,
-                    image: onboardingData[index]["image"]!,
+                    title: onboardingData[index]['title']!,
+                    description: onboardingData[index]['description']!,
+                    image: onboardingData[index]['image']!,
                   );
                 },
               ),
@@ -90,8 +90,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   }
                 },
                 buttonText: _currentPage == onboardingData.length - 1
-                    ? "Get Started"
-                    : "Next",
+                    ? 'Get Started'
+                    : 'Next',
               ),
             ),
             const SizedBox(height: 40),

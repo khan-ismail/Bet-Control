@@ -10,6 +10,8 @@ abstract class AppTheme {
     primary: AppPallete.primary,
     onPrimary: AppPallete.whiteColor,
     error: AppPallete.error,
+    onSurfaceVariant: AppPallete.onSurfaceVariant,
+    onSecondary: AppPallete.onSecondary,
   );
 
   static _border([Color color = AppPallete.primary]) => OutlineInputBorder(
@@ -20,10 +22,13 @@ abstract class AppTheme {
         borderRadius: BorderRadius.circular(10),
       );
 
-  static const _elevatedButtonTheme = ElevatedButtonThemeData(
+  static final _elevatedButtonTheme = ElevatedButtonThemeData(
     style: ButtonStyle(
       backgroundColor: WidgetStatePropertyAll(AppPallete.primary),
       foregroundColor: WidgetStatePropertyAll(AppPallete.whiteColor),
+      padding: WidgetStatePropertyAll(
+        const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+      ),
     ),
   );
 
@@ -32,26 +37,29 @@ abstract class AppTheme {
         style: ButtonStyle(
           shape: WidgetStatePropertyAll(
             RoundedRectangleBorder(
-              borderRadius: const BorderRadius.all(Radius.circular(10)),
+              borderRadius: const BorderRadius.all(Radius.circular(24)),
               side: BorderSide(width: 3, color: borderColor),
             ),
+          ),
+          padding: WidgetStatePropertyAll(
+            const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
           ),
         ),
       );
 
   static final _appBarTheme = AppBarTheme(
     backgroundColor: AppPallete.backgroundColor,
-    titleTextStyle: AppTextStyles.bodyLarge.copyWith(
+    titleTextStyle: AppTextStyles.headlineLarge.copyWith(
       fontWeight: FontWeight.w800,
     ),
   );
 
   static final _inputDecorationTheme = InputDecorationTheme(
-    contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+    contentPadding: const EdgeInsets.all(10),
     enabledBorder: _border(),
     focusedBorder: _border(),
     hintStyle: AppTextStyles.headlineSmall.copyWith(
-      color: AppPallete.primary.withValues(alpha: 0.3),
+      color: AppPallete.primary.withValues(alpha: 0.7),
     ),
     errorStyle: AppTextStyles.headlineSmall.copyWith(
       color: AppPallete.error,

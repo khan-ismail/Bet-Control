@@ -23,7 +23,7 @@ class AppTextField extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
-      spacing: 3,
+      spacing: 5,
       children: [
         Text(
           title,

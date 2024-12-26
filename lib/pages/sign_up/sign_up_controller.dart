@@ -11,4 +11,6 @@ class SignUpController extends GetxController {
   final dobConroller = TextEditingController();
   final passwordConroller = TextEditingController();
   final confirmPasswordConroller = TextEditingController();
+
+  RxBool isAgreedTC = RxBool(false);
 }
