@@ -1,7 +1,8 @@
 import 'package:betcontrol/components/form_fields/check_box_field.dart';
 import 'package:betcontrol/components/form_fields/date_picker_field.dart';
 import 'package:betcontrol/components/form_fields/text_field.dart';
-import 'package:betcontrol/pages/sign_up/sign_up_controller.dart';
+import 'package:betcontrol/pages/login/login_page.dart';
+import 'package:betcontrol/pages/sign_up/controllers/sign_up_controller.dart';
 import 'package:betcontrol/utils/constants/icons.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -125,21 +126,29 @@ class FormWidget extends StatelessWidget {
           ),
           Align(
             alignment: Alignment.center,
-            child: RichText(
-              text: TextSpan(
-                text: 'Have an account? ',
-                children: [
-                  TextSpan(
-                    text: 'Login',
-                    style: Theme.of(context).textTheme.labelSmall!.copyWith(
-                          fontWeight: FontWeight.bold,
-                        ),
-                  ),
-                ],
-                style: Theme.of(context).textTheme.labelSmall!.copyWith(
-                      fontWeight: FontWeight.w500,
-                      color: Theme.of(context).colorScheme.onSurfaceVariant,
+            child: GestureDetector(
+              onTap: () => Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => LoginPage(),
+                ),
+              ),
+              child: RichText(
+                text: TextSpan(
+                  text: 'Have an account? ',
+                  children: [
+                    TextSpan(
+                      text: 'Login',
+                      style: Theme.of(context).textTheme.labelSmall!.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
                     ),
+                  ],
+                  style: Theme.of(context).textTheme.labelSmall!.copyWith(
+                        fontWeight: FontWeight.w500,
+                        color: Theme.of(context).colorScheme.onSurfaceVariant,
+                      ),
+                ),
               ),
             ),
           ),

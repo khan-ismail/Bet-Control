@@ -11,6 +11,8 @@ abstract class AppIcons {
   );
 
   static final illustration = SvgPicture.asset(AppIconPath.illustration);
+  static final loginIllustration =
+      SvgPicture.asset(AppIconPath.loginIllustration);
 
   static final dropdown = SvgPicture.asset(
     AppIconPath.dropdown,
@@ -32,4 +34,6 @@ abstract class AppIconPath {
   static final String dropdown = 'assets/icons/dropdown.svg';
   static final String activeEyeSlash = 'assets/icons/active_eye_slash.svg';
   static final String inActiveEyeSlash = 'assets/icons/in_active_eye_slash.svg';
+  static final String loginIllustration =
+      'assets/images/authentication/login_illustration.svg';
 }
