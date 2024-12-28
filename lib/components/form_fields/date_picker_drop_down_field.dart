@@ -1,4 +1,5 @@
 import 'package:betcontrol/components/form_fields/drop_down_field.dart';
+import 'package:betcontrol/components/form_fields/field_heading.dart';
 import 'package:flutter/material.dart';
 
 class AppDatePickerDropDownField extends StatefulWidget {
@@ -48,13 +49,7 @@ class _AppDatePickerDropDownFieldState
       mainAxisSize: MainAxisSize.min,
       spacing: 5,
       children: [
-        Text(
-          'Date Of Birth',
-          style: Theme.of(context)
-              .textTheme
-              .displaySmall!
-              .copyWith(fontWeight: FontWeight.w600),
-        ),
+        FieldHeading(title: 'Date Of Birth'),
         Row(
           spacing: 20,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,

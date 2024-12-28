@@ -1,3 +1,4 @@
+import 'package:betcontrol/components/form_fields/field_heading.dart';
 import 'package:flutter/material.dart';
 
 class AppTextField extends StatelessWidget {
@@ -29,13 +30,7 @@ class AppTextField extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       spacing: 5,
       children: [
-        Text(
-          title,
-          style: Theme.of(context)
-              .textTheme
-              .displaySmall!
-              .copyWith(fontWeight: FontWeight.w600),
-        ),
+        FieldHeading(title: title),
         TextFormField(
           controller: controller,
           initialValue: initialValue,

@@ -8,6 +8,7 @@ abstract class AppTheme {
     surface: AppPallete.backgroundColor,
     onSurface: AppPallete.primary,
     primary: AppPallete.primary,
+    primaryContainer: AppPallete.primaryContainer,
     onPrimary: AppPallete.whiteColor,
     error: AppPallete.error,
     onSurfaceVariant: AppPallete.onSurfaceVariant,

@@ -1,3 +1,4 @@
+import 'package:betcontrol/components/form_fields/field_heading.dart';
 import 'package:betcontrol/utils/date_formatter.dart';
 import 'package:flutter/material.dart';
 
@@ -26,13 +27,7 @@ class AppDatePickerField extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       spacing: 5,
       children: [
-        Text(
-          title,
-          style: Theme.of(context)
-              .textTheme
-              .displaySmall!
-              .copyWith(fontWeight: FontWeight.w600),
-        ),
+        FieldHeading(title: title),
         TextFormField(
           controller: controller,
           initialValue: initialValue,
