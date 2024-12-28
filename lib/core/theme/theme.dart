@@ -17,7 +17,7 @@ abstract class AppTheme {
   static _border([Color color = AppPallete.primary]) => OutlineInputBorder(
         borderSide: BorderSide(
           color: color,
-          width: 2,
+          width: 1,
         ),
         borderRadius: BorderRadius.circular(10),
       );
@@ -58,6 +58,7 @@ abstract class AppTheme {
     contentPadding: const EdgeInsets.all(10),
     enabledBorder: _border(),
     focusedBorder: _border(),
+    disabledBorder: _border(AppPallete.primary.withValues(alpha: 0.7)),
     hintStyle: AppTextStyles.headlineSmall.copyWith(
       color: AppPallete.primary.withValues(alpha: 0.7),
     ),
@@ -69,6 +70,26 @@ abstract class AppTheme {
     ),
   );
 
+  static final _datePickerTheme = DatePickerThemeData(
+    backgroundColor: AppPallete.surface,
+    cancelButtonStyle: ButtonStyle(
+      textStyle: WidgetStatePropertyAll(
+          AppTextStyles.bodyMedium.copyWith(fontWeight: FontWeight.bold)),
+    ),
+    confirmButtonStyle: ButtonStyle(
+      textStyle: WidgetStatePropertyAll(
+          AppTextStyles.bodyMedium.copyWith(fontWeight: FontWeight.bold)),
+    ),
+    dayStyle: AppTextStyles.bodyMedium,
+    yearStyle: AppTextStyles.bodyMedium,
+    weekdayStyle: AppTextStyles.bodyMedium,
+    headerHelpStyle: AppTextStyles.bodyMedium,
+    headerHeadlineStyle: AppTextStyles.bodyMedium,
+    rangePickerHeaderHelpStyle: AppTextStyles.bodyMedium,
+    rangePickerHeaderHeadlineStyle: AppTextStyles.bodyMedium,
+    dividerColor: AppPallete.primary.withValues(alpha: 0.7),
+  );
+
   static final lightThemeMode = ThemeData.light().copyWith(
     colorScheme: _colorScheme,
     scaffoldBackgroundColor: AppPallete.backgroundColor,
@@ -76,6 +97,16 @@ abstract class AppTheme {
     inputDecorationTheme: _inputDecorationTheme,
     elevatedButtonTheme: _elevatedButtonTheme,
     outlinedButtonTheme: _outlinedButtonTheme(),
+    dropdownMenuTheme: DropdownMenuThemeData(
+      inputDecorationTheme: _inputDecorationTheme,
+      textStyle: AppTextStyles.headlineSmall.copyWith(
+        color: AppPallete.primary.withValues(alpha: 0.7),
+      ),
+      menuStyle: MenuStyle(
+        maximumSize: WidgetStatePropertyAll(Size(20, 20)),
+      ),
+    ),
+    datePickerTheme: _datePickerTheme,
     textTheme: GoogleFonts.nunitoTextTheme().copyWith(
       bodyLarge: AppTextStyles.bodyLarge,
       bodyMedium: AppTextStyles.bodyMedium,

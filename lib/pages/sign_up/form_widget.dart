@@ -1,4 +1,5 @@
 import 'package:betcontrol/components/form_fields/check_box_field.dart';
+import 'package:betcontrol/components/form_fields/date_picker_field.dart';
 import 'package:betcontrol/components/form_fields/text_field.dart';
 import 'package:betcontrol/pages/sign_up/sign_up_controller.dart';
 import 'package:betcontrol/utils/constants/icons.dart';
@@ -28,21 +29,39 @@ class FormWidget extends StatelessWidget {
             controller: xController.emailConroller,
             hintText: 'Enter your email address',
           ),
-          AppTextField(
+          AppDatePickerField(
             title: 'Date Of Birth',
             controller: xController.dobConroller,
-            hintText: 'MM-DD-YYYY',
+            hintText: 'DD-MM-YYYY',
           ),
-          AppTextField(
-            title: 'Password',
-            controller: xController.passwordConroller,
-            hintText: 'Enter your password',
-          ),
-          AppTextField(
-            title: 'Confirm Password',
-            controller: xController.confirmPasswordConroller,
-            hintText: 'Re-enter your password',
-          ),
+          Obx(() {
+            return AppTextField(
+              title: 'Password',
+              controller: xController.passwordConroller,
+              hintText: 'Enter your password',
+              suffixIcon: GestureDetector(
+                onTap: xController.updatePasswordObscureTextFlag,
+                child: xController.passwordObscureText.value
+                    ? AppIcons.activeEyeSlash
+                    : AppIcons.inActiveEyeSlash,
+              ),
+              obscureText: xController.passwordObscureText.value,
+            );
+          }),
+          Obx(() {
+            return AppTextField(
+              title: 'Confirm Password',
+              controller: xController.confirmPasswordConroller,
+              hintText: 'Re-enter your password',
+              suffixIcon: GestureDetector(
+                onTap: xController.updateConfirmPasswordObscureTextFlag,
+                child: xController.confirmPasswordObscureText.value
+                    ? AppIcons.activeEyeSlash
+                    : AppIcons.inActiveEyeSlash,
+              ),
+              obscureText: xController.confirmPasswordObscureText.value,
+            );
+          }),
           Obx(
             () => AppCheckBoxField(
               checkboxValue: xController.isAgreedTC.value,

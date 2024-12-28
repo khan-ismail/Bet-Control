@@ -13,4 +13,15 @@ class SignUpController extends GetxController {
   final confirmPasswordConroller = TextEditingController();
 
   RxBool isAgreedTC = RxBool(false);
+
+  RxBool passwordObscureText = RxBool(true);
+  RxBool confirmPasswordObscureText = RxBool(true);
+
+  void updateConfirmPasswordObscureTextFlag() {
+    confirmPasswordObscureText.value = !confirmPasswordObscureText.value;
+  }
+
+  void updatePasswordObscureTextFlag() {
+    passwordObscureText.value = !passwordObscureText.value;
+  }
 }
