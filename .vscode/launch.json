@@ -36,6 +36,12 @@
 
 /// commands to build apk/ipa
 
+// DEV APK :
+// flutter build apk --flavor dev --target lib/main_dev.dart
+
+// DEV IPA : 
+// flutter build ipa --flavor dev --target lib/main_dev.dart
+
 // UAT APK :
 // flutter build apk --flavor uat --target lib/main_uat.dart
 
