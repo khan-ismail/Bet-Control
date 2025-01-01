@@ -19,64 +19,64 @@ abstract class AppTextStyles {
   );
 
   static const TextStyle labelSmall = TextStyle(
-    fontSize: 16,
+    fontSize: 15,
     color: AppPallete.primary,
   );
 
   static const TextStyle titleSmall = TextStyle(
-    fontSize: 18,
+    fontSize: 16,
     color: AppPallete.primary,
   );
 
   /// Medium
   static const TextStyle bodyMedium = TextStyle(
-    fontSize: 20,
+    fontSize: 17,
     color: AppPallete.primary,
   );
 
   static const TextStyle displayMedium = TextStyle(
-    fontSize: 22,
+    fontSize: 18,
     color: AppPallete.primary,
   );
 
   static const TextStyle headlineMedium = TextStyle(
-    fontSize: 24,
+    fontSize: 20,
     color: AppPallete.primary,
   );
 
   static const TextStyle labelMedium = TextStyle(
-    fontSize: 25,
+    fontSize: 22,
     color: AppPallete.primary,
   );
 
   static const TextStyle titleMedium = TextStyle(
-    fontSize: 26,
+    fontSize: 24,
     color: AppPallete.primary,
   );
 
   /// Large
   static const TextStyle bodyLarge = TextStyle(
-    fontSize: 28,
+    fontSize: 25,
     color: AppPallete.primary,
   );
 
   static const TextStyle displayLarge = TextStyle(
-    fontSize: 30,
+    fontSize: 26,
     color: AppPallete.primary,
   );
 
   static const TextStyle headlineLarge = TextStyle(
-    fontSize: 32,
+    fontSize: 28,
     color: AppPallete.primary,
   );
 
   static const TextStyle labelLarge = TextStyle(
-    fontSize: 34,
+    fontSize: 30,
     color: AppPallete.primary,
   );
 
   static const TextStyle titleLarge = TextStyle(
-    fontSize: 36,
+    fontSize: 32,
     color: AppPallete.primary,
   );
 }

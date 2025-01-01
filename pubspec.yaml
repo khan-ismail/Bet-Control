@@ -16,6 +16,7 @@ dependencies:
   google_fonts: ^6.2.1
   hive: ^2.2.3
   hive_flutter: ^1.1.0
+  intl: ^0.20.1
   riverpod_annotation: ^2.6.1
 
 dev_dependencies:
@@ -51,26 +52,27 @@ flutter:
     - assets/images/raster/splash/
     - assets/jsons/
     - assets/images/authentication/
+    - assets/icons/
 
-  fonts:
-    - family: Nunito
-      fonts:
-        - asset: assets/fonts/nunito/Nunito-Black.ttf
-          weight: 900
-        - asset: assets/fonts/nunito/Nunito-BlackItalic.ttf
-          weight: 900
-          style: italic
-        - asset: assets/fonts/nunito/Nunito-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/nunito/Nunito-BoldItalic.ttf
-          weight: 700
-          style: italic
-        - asset: assets/fonts/nunito/Nunito-SemiBold.ttf
-          weight: 600
-        - asset: assets/fonts/nunito/Nunito-Regular.ttf
-          weight: 400
-        - asset: assets/fonts/nunito/Nunito-Light.ttf
-          weight: 300
+  # fonts:
+  #   - family: Nunito
+  #     fonts:
+  #       - asset: assets/fonts/nunito/Nunito-Black.ttf
+  #         weight: 900
+  #       - asset: assets/fonts/nunito/Nunito-BlackItalic.ttf
+  #         weight: 900
+  #         style: italic
+  #       - asset: assets/fonts/nunito/Nunito-Bold.ttf
+  #         weight: 700
+  #       - asset: assets/fonts/nunito/Nunito-BoldItalic.ttf
+  #         weight: 700
+  #         style: italic
+  #       - asset: assets/fonts/nunito/Nunito-SemiBold.ttf
+  #         weight: 600
+  #       - asset: assets/fonts/nunito/Nunito-Regular.ttf
+  #         weight: 400
+  #       - asset: assets/fonts/nunito/Nunito-Light.ttf
+  #         weight: 300
 
 flavorizr:
   flavors:
